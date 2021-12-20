@@ -50,4 +50,6 @@ return [
     Task\TaskBundle\TaskBundle::class => ['all' => true],
     Sulu\Bundle\AutomationBundle\SuluAutomationBundle::class => ['all' => true],
     Sulu\Bundle\RedirectBundle\SuluRedirectBundle::class => ['all' => true],
+    Sylius\Bundle\ThemeBundle\SyliusThemeBundle::class => ['all' => true],
+    Sulu\Bundle\ThemeBundle\SuluThemeBundle::class => ['all' => true],
 ];
