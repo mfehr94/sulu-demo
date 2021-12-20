@@ -467,11 +467,17 @@
     "sulu/sulu": {
         "version": "2.0.4"
     },
+    "sulu/theme-bundle": {
+        "version": "3.0.2"
+    },
     "sulu/web-twig": {
         "version": "v1.5.0"
     },
     "swiftmailer/swiftmailer": {
         "version": "v6.2.3"
+    },
+    "sylius/theme-bundle": {
+        "version": "v2.2.0"
     },
     "symfony-cmf/routing": {
         "version": "2.1.1"
