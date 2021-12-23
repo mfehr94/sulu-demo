@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ app.request.locale|split('_')[0] }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% block meta %}
+        {% include 'includes/meta.html.twig' %}
+    {% endblock %}
+
+    {% block style -%}
+        <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+        {{ vite_entry_link_tags('main') }}
+    {% endblock %}
+
+</head>
+<body>
+{% block content %}
+    {# define container element for rendering single page application #}
+    <div id="sulu-headless-container"></div>
+
+    {# initialize application with json data of current page to prevent second request on first load #}
+    <script>window.SULU_HEADLESS_API_ENDPOINT = window.location.origin + '/api';</script>
+    <script>window.SULU_HEADLESS_VIEW_DATA = {{ headless|json_encode|raw }};</script>
+
+    {# start single page application by including built javascript code #}
+    {{ vite_entry_script_tags('main') }}
+    <!--<script src="/build/headless-react/js/index.js"></script>-->
+{% endblock %}
+</body>
+</html>

@@ -52,4 +52,6 @@ return [
     Sulu\Bundle\RedirectBundle\SuluRedirectBundle::class => ['all' => true],
     Sylius\Bundle\ThemeBundle\SyliusThemeBundle::class => ['all' => true],
     Sulu\Bundle\ThemeBundle\SuluThemeBundle::class => ['all' => true],
+    Sulu\Bundle\HeadlessBundle\SuluHeadlessBundle::class => ['all' => true],
+    Pentatrion\ViteBundle\PentatrionViteBundle::class => ['all' => true],
 ];
