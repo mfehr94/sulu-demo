@@ -1,0 +1,16 @@
+{
+  "isProd": true,
+  "entryPoints": {
+    "main": {
+      "js": [
+        "/build/headless/main.edae193f.js"
+      ],
+      "css": [
+        "/build/headless/main.3b1223df.css"
+      ],
+      "preload": [
+        "/build/headless/vendor.1b5bd43d.js"
+      ]
+    }
+  }
+}

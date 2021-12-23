@@ -7,7 +7,7 @@
     <name>sulu.rocks</name>
     <key>demo</key>
 
-    <theme>vendor/website</theme>
+    <theme>vendor/headless</theme>
 
     <localizations>
         <!-- See: http://docs.sulu.io/en/latest/book/localization.html how to add new localizations -->

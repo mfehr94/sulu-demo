@@ -1,0 +1,49 @@
+{
+  "name": "sulu_headless_demo",
+  "private": true,
+  "description": "Basic bundle structure for a default website project.",
+  "author": "Sulu GmbH",
+  "license": "ISC",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "format": "prettier -w -u .",
+    "lint": "npm run lint:css && npm run lint:js",
+    "lint:fix": "npm run lint:css:fix && npm run lint:js:fix",
+    "lint:js": "eslint src --ext .js,.jsx,.ts,.tsx,.vue",
+    "lint:js:fix": "eslint src --ext .js,.jsx,.ts,.tsx,.vue --fix",
+    "lint:css": "stylelint css/*.scss css/**/*.scss",
+    "lint:css:fix": "stylelint css/*.scss css/**/*.scss --fix",
+    "test": "jest"
+  },
+  "dependencies": {
+    "history": "^5.2.0",
+    "loglevel": "^1.8.0",
+    "vue": "^3.2.25",
+    "whatwg-fetch": "^3.6.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "@vue/test-utils": "^2.0.0-rc.17",
+    "@vue/vue3-jest": "^27.0.0-alpha.4",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^25.3.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "jest": "^27.4.5",
+    "jest-transform-stub": "^2.0.0",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.2",
+    "typescript": "^4.5.4",
+    "vite": "^2.7.2",
+    "vite-plugin-symfony": "^0.2",
+    "vue-eslint-parser": "^8.0.1",
+    "vue-tsc": "^0.29.8"
+  },
+  "engines": {
+    "node": "^16.*"
+  }
+}
